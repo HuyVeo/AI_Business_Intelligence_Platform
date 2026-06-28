@@ -2,10 +2,30 @@
 __pycache__/
 *.py[codz]
 *$py.class
-
 # C extensions
 *.so
+# Virtual Environment
+.venv/
 
+# Data Lake
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/sample/*
+!data/sample/.gitkeep
+
+# Notebook
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
 # Distribution / packaging
 .Python
 build/
