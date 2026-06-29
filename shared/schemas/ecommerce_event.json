@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "event_id": {"type": "string"},
+    "event_time": {"type": "string", "format": "date-time"},
+    "user_id": {"type": "integer"},
+    "event_type": {"type": "string", "enum": ["view", "cart", "purchase"]},
+    "product_id": {"type": "integer"},
+    "price": {"type": "number"},
+    "features": {
+      "type": "object",
+      "properties": {
+        "hour": {"type": "integer"},
+        "weekday": {"type": "string"}
+      }
+    }
+  }
+}
